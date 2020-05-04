@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Search">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        >
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+
+
+
+            app:menu="@menu/bottom_navigation_menu" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="400dp"
+            android:layout_height="663dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <EditText
+                android:id="@+id/stateorcountry"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+
+                android:hint="Enter name of state begin with cap ex New York"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add to Favorite"></CheckBox>
+
+            <Button
+                android:id="@+id/searchbtn"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:text="search" />
+
+
+            <TextView
+                android:id="@+id/post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textSize="12dp"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+
+
